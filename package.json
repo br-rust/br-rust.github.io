@@ -1,0 +1,30 @@
+{
+  "name": "br-rust.github.io",
+  "version": "1.0.0",
+  "description": "Information hub",
+  "main": "index.html",
+  "scripts": {
+    "build:sass": "node-sass sass/konrad.scss css/style.css",
+    "dev": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/br-rust/br-rust.github.io.git"
+  },
+  "keywords": [
+    "rust"
+  ],
+  "author": "Vinicius Palma",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/br-rust/br-rust.github.io/issues"
+  },
+  "homepage": "rust-br.com",
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0"
+  }
+}
