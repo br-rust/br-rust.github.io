@@ -1,18 +1,20 @@
 .header {
-  height: 10%;
-
-  &__list {
-
-  }
 
   &__navigation-list {
-
+    @media screen and (max-width: 600px) {
+      text-align: center;
+    }
   }
 
   &__list-item {
     display: inline-block;
     vertical-align: middle;
     margin: 0 20px 0 0;
+
+    @media screen and (max-width: 600px) {
+      display: block;
+      margin-top: 10px;
+    }
   }
 
   &__link {

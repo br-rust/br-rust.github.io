@@ -13,6 +13,10 @@
     background: -moz-linear-gradient($background-color, $background-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @media screen and (max-width: 545px) {
+      font-size: 2rem
+    }
   }
 
   &__info-list {
