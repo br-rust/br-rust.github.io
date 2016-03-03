@@ -1,7 +1,161 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  box-sizing: border-box;
+  font-family: 'Roboto Mono'; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+.container {
+  height: 100%;
+  width: 100%;
+  padding: 3%; }
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 3%;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 0 50px 25px rgba(0, 0, 0, 0.7); }
+
+.header {
+  height: 10%; }
+  .header__list-item {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 20px 0 0; }
+  .header__link {
+    font-size: .8rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #cfcfcf; }
+    .header__link--logo {
+      display: inline-block;
+      height: 40px;
+      width: 40px; }
+      .header__link--logo svg {
+        width: 100%;
+        height: 100%; }
+        .header__link--logo svg path {
+          fill: #cfcfcf; }
+    .header__link:hover {
+      text-decoration: underline;
+      color: #9c9c9c; }
+      .header__link:hover path {
+        fill: #9c9c9c; }
+
+.content {
+  margin-top: 15%;
+  text-align: center; }
+  .content__title {
+    color: #cfcfcf;
+    display: inline-block;
+    font-size: 4rem;
+    letter-spacing: .6rem;
+    font-weight: 700;
+    line-height: 1.2;
+    background: -webkit-linear-gradient(left, #B565E8, #2CBAF9 40%, #66ECD2);
+    background: linear-gradient(to right, #B565E8, #2CBAF9 40%, #66ECD2);
+    background: -moz-linear-gradient(#fff, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  .content__info-list {
+    margin-top: 2%; }
+  .content__info-item {
+    display: inline-block;
+    vertical-align: middle; }
+  .content__link {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    color: #000;
+    margin: 0 5px; }
+    .content__link--irc {
+      height: auto;
+      width: auto;
+      text-decoration: none; }
+    .content__link svg {
+      width: 100%;
+      height: 100%; }
+
+.footer {
+  position: absolute;
+  width: 94%;
+  bottom: 3%;
+  text-align: center; }
+  .footer__contact-us {
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: -webkit-linear-gradient(left, #B565E8, #2CBAF9 40%, #66ECD2);
+    background: linear-gradient(to right, #B565E8, #2CBAF9 40%, #66ECD2);
+    background-position: left bottom;
+    background-size: 200%;
+    font-weight: 100;
+    color: #fff;
+    border-radius: 2rem;
+    -webkit-transition: background-position .5s ease-in-out;
+    transition: background-position .5s ease-in-out; }
+    .footer__contact-us:hover, .footer__contact-us:active {
+      background-position: right top; }
+
 :root {
   font-size: 16px; }
 
 body {
-  background: #f4f4f4; }
+  background: url("https://images.unsplash.com/photo-1455487890814-f11ab4eaec4b?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=d8530f0831a7424b23865ff2574c86a5");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+body, html {
+  height: 100%; }
 
 /*# sourceMappingURL=style.css.map */

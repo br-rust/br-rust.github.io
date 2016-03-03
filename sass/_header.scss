@@ -1,0 +1,48 @@
+.header {
+  height: 10%;
+
+  &__list {
+
+  }
+
+  &__navigation-list {
+
+  }
+
+  &__list-item {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 20px 0 0;
+  }
+
+  &__link {
+    font-size: .8rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $secondary-text-color;
+
+    &--logo {
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+
+      svg {
+        width: 100%;
+        height: 100%;
+
+        path {
+          fill: $secondary-text-color;
+        }
+      }
+    }
+
+    &:hover {
+      text-decoration: underline;
+      color: darken($secondary-text-color, 20%);
+
+      path {
+        fill: darken($secondary-text-color, 20%);
+      }
+    }
+  }
+}
