@@ -1,0 +1,49 @@
+.content {
+  margin-top: 15%;
+  text-align: center;
+
+  &__title {
+    color: $secondary-text-color;
+    display: inline-block;
+    font-size: 4rem;
+    letter-spacing: .6rem;
+    font-weight: 700;
+    line-height: 1.2;
+    background: $gradient;
+    background: -moz-linear-gradient($background-color, $background-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @media screen and (max-width: 545px) {
+      font-size: 2rem
+    }
+  }
+
+  &__info-list {
+    margin-top: 2%;
+  }
+
+  &__info-item {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__link {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    color: $black-color;
+    margin: 0 5px;
+
+    &--irc {
+      height: auto;
+      width: auto;
+      text-decoration: none;
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

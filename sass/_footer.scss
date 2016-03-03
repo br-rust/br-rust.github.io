@@ -1,0 +1,24 @@
+.footer {
+  position: absolute;
+  width: 94%;
+  bottom: 3%;
+  text-align: center;
+
+  &__contact-us {
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: $gradient;
+    background-position: left bottom;
+    background-size: 200%;
+    font-weight: 100;
+    color: $background-color;
+    border-radius: 2rem;
+    transition: background-position .5s ease-in-out;
+
+    &:hover,
+    &:active {
+      background-position: right top;
+    }
+  }
+}
